@@ -13,11 +13,17 @@ body{
 
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
+    line-height: 2;
 
 }
 img{
     width: 100%;
     display: block;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 .grid-container{
@@ -37,6 +43,10 @@ img{
 }
 .center-text{
     text-align: center;
+}
+
+.m-b-s{
+    margin-bottom: 2rem;
 }
 
 /* global setting end */
@@ -141,6 +151,12 @@ img{
     .categorias-container{
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1.5rem;
+    }
+
+    .secondary-heading{
+        font-size: 4rem;
+       
+    
     }
 }
 /* CATEGORIES END */
@@ -377,7 +393,43 @@ img{
    
 }
 
-
-
-
 /* FOOTER END */
+
+
+
+
+/* NOSOTROS.HTML STILOS */
+
+.nosotros-container-2{
+    padding-top: 5rem;
+}
+
+.nosotros-gid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.nosotros-img{
+    width: 100%;
+    display: block;
+}
+
+.nosotros-text-box{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.7rem;
+}
+
+
+@media (min-width: 860px){
+
+    .nosotros-gid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        align-items: center;
+    }
+
+    
+}

@@ -381,3 +381,78 @@ img{
 
 
 /* FOOTER END */
+
+/* contacto */
+
+
+.form{
+    max-width:  60rem;
+    margin: 0 auto;
+}
+
+.form-container{
+    padding-top: 5rem;
+}
+
+
+.form fieldset{
+    border: 1px solid rgba(0,0,0,.5);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.form legend{
+    background-color: #005485;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+.form-group{
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+
+.form-label{
+   flex-basis: 10rem;
+}
+
+.form-input{
+    width: 100%;
+   
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
+    
+}
+
+.btn-form{
+    display: block;
+    background-color: #8cbc00;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    padding: 1.5rem 0;
+    border: none;
+    border-radius: 10px;
+    transition: all .3s ease;
+    font-weight: 900;
+    border-radius: 10px;
+    letter-spacing: 1px;
+
+}
+
+.btn-form:hover{
+    background-color: #769c02;
+}
+
+@media (min-width: 768px){
+
+    .btn-form{
+        width: auto;
+        padding: 1.5rem 3rem;
+        
+    }
+}

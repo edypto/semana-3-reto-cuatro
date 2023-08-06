@@ -11,7 +11,8 @@ html{
 }
 body{
 
-    font-family: 'Playfair Display', serif;
+     font-family: 'Playfair Display', serif; 
+   
     font-size: 1.6rem;
     line-height: 2;
 
@@ -23,7 +24,8 @@ img{
 
 p{
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
+    line-height: 2;
 }
 
 .grid-container{
@@ -103,7 +105,11 @@ p{
    background-position: center;
     height: 25rem;
 }
-
+@media (min-width: 768px){
+    .section-hero{
+        height: 55rem;
+    }
+}
 /* SECTION HERO END */
 
 
@@ -125,6 +131,7 @@ p{
     margin-bottom: 2rem;
     font-weight: 600;
     color: #000;
+    font-weight: 900;
 
 }
 
@@ -156,13 +163,11 @@ p{
 
     .secondary-heading{
         font-size: 4rem;
+        font-weight: 900;
        
     
     }
-    .secondary-heading{
-        font-size: 4rem;
-
-    }
+    
 }
 /* CATEGORIES END */
 
@@ -399,6 +404,9 @@ p{
 }
 /* BLOG START */
 
+.contenedor-blog{
+    padding-top: 5rem;
+}
 
 .blog-img img{
  display: block;
@@ -414,6 +422,8 @@ p{
     margin-bottom: 2rem;
     border-bottom: 1px solid #e1e1e1;
 }
+
+
 
 /* galeria styles */
 
@@ -443,6 +453,48 @@ p{
     text-decoration: none;
     color: #000;
 }
+
+@media (min-width: 768px){
+
+    /* FOOTER END */
+    
+    
+        .blog-container{
+            display: grid;
+            grid-template-columns: 2fr 1;
+            grid-column-gap: 10rem;
+        }
+    
+    
+        .aside ul{
+            margin: auto;
+            text-align: left;
+            width: 100%;
+            
+        }
+    
+        .aside{
+            padding-top: 10rem;
+        }
+        .btn-form{
+            width: auto;
+            padding: 1.5rem 3rem;
+            
+        }
+    
+    
+        .galeria-container{
+            
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .btn-blog{
+           
+            max-width: 30rem;
+
+        }
+    
+    }
 /* FOOTER END */
 
 /* contacto */
@@ -499,10 +551,10 @@ p{
     color: white;
     padding: 1.5rem 0;
     border: none;
-    border-radius: 10px;
+    
     transition: all .3s ease;
     font-weight: 900;
-    border-radius: 10px;
+    cursor: pointer;
     letter-spacing: 1px;
 
 }
@@ -534,41 +586,7 @@ p{
 
 }
 
-@media (min-width: 768px){
 
-/* FOOTER END */
-
-
-    .blog-container{
-        display: grid;
-        grid-template-columns: 2fr 1;
-        grid-column-gap: 10rem;
-    }
-
-
-    .aside ul{
-        margin: auto;
-        text-align: left;
-        width: 100%;
-        
-    }
-
-    .aside{
-        padding-top: 10rem;
-    }
-    .btn-form{
-        width: auto;
-        padding: 1.5rem 3rem;
-        
-    }
-
-
-    .galeria-container{
-        
-        grid-template-columns: repeat(3,1fr);
-    }
-
-}
 /* NOSOTROS.HTML STILOS */
 
 .nosotros-container-2{

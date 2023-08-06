@@ -23,7 +23,7 @@ img{
 .grid-container{
     display: grid;
 
-    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, minmax(min-content,14rem))[center-end] minmax(3rem, 1fr)[full-end];
+    grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, minmax(min-content,14rem))[center-end] minmax(2rem, 1fr)[full-end];
 
    
     
@@ -39,6 +39,10 @@ img{
     text-align: center;
 }
 
+/* global setting end */
+
+
+/* header-start */
 
 .header-title{
     margin-top: 5rem ;
@@ -63,16 +67,24 @@ img{
 
 }
 
-@media (min-width: 640px){
+
+.navigation ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.7rem;
+}
+
+/* header END  */
+
+@media (min-width: 768px){
     .navigation ul{
         flex-direction: row;
         justify-content: space-between;
     }
 }
-.navigation ul li a{
-    text-decoration: none;
-    color: #000;
-}
+
+
+/* SECTION HERO START */
 
 .section-hero{
     background-image: url(img/principal.jpg);
@@ -81,6 +93,12 @@ img{
    background-position: center;
     height: 25rem;
 }
+
+/* SECTION HERO END */
+
+
+
+ /* CATEGORIES START  */
 
 .categorias{
     padding: 5rem 0;
@@ -92,12 +110,6 @@ img{
     grid-row-gap: 2rem;
 }
 
-@media (min-width: 640px){
-    .categorias-container{
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 1.5rem;
-    }
-}
 .secondary-heading{
     font-size: 3.2rem;
     margin-bottom: 2rem;
@@ -105,9 +117,6 @@ img{
     color: #000;
 
 }
-
-
-
 
 
 .btn-text:link,
@@ -128,9 +137,17 @@ img{
     border-bottom-right-radius: 1rem;
 }
 
+@media (min-width: 768px){
+    .categorias-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.5rem;
+    }
+}
+/* CATEGORIES END */
 
 
 
+/* NOSOTROS START */
 
 
 .section-nosotros{
@@ -141,8 +158,6 @@ img{
     background-size: 100%, 70rem;
    
 }
-
-
 
 .nosotros-container{
     display: grid;
@@ -166,7 +181,7 @@ img{
     line-height: 1.9;
 }
 
-@media (min-width: 640px){
+@media (min-width: 768px){
     .section-nosotros{
 
         background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
@@ -186,6 +201,11 @@ img{
     }
 }
 
+
+/* NOSOTROS END */
+
+/* PRODUCTOS START */
+
 .section-productos{
     padding-top: 5rem;
 }
@@ -193,7 +213,7 @@ img{
 .productos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-row-gap: 2rem;
 }
 
 .producto-text{
@@ -203,16 +223,14 @@ img{
     text-align: center;
     line-height: 2;
     font-size: 1.6rem;
+    
 }
 
 .producto{
     background-color: #037bc0;
-}
- img{
-    width: 100%;
-    display: block;
     
 }
+
 .producto-text h3{
     font-size: 2rem;
 
@@ -241,23 +259,16 @@ img{
 
 }
 
-@media (min-width: 780px){
+@media (min-width: 768px){
    .productos{
 
     grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 2rem;
 
-    
-    
+      
    }
 
-   .product:nth-child(1) img{
     
-    height: 43rem;
-    width: 100%;
-    object-fit: cover;
-   }
-
-  
    .producto:nth-child(1){
     grid-column: 1/7;
 
@@ -286,12 +297,87 @@ img{
    }
 
    
-   
-
-   
-
-
-
+   .producto:nth-child(1) img{
+    
+    height: 48rem;
+    width: 100%;
+    object-fit: cover;
+   }
    
 }
 
+/* PRODUCTOS END */
+
+
+/* FOOTER START */
+
+.footer{
+    padding-top: 5rem;
+    margin-top: 5rem;
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+}
+
+.footer-box{
+    text-align: center;
+    
+}
+
+.footer-heading{
+    font-size: 2.4rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.footer-nav ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #000;
+    line-height: 2.2;
+    font-size: 1.6rem;
+    display: block;
+}
+
+
+
+.copyright{
+    margin-top: 5rem ;
+    margin-bottom: 1.6rem;
+}
+
+@media (min-width: 768px){
+
+    
+.footer-grid-container{
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.footer-heading{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.footer-box{
+    text-align: left;
+}
+.footer-box ul{
+    text-align: left;
+}
+   
+}
+
+
+
+
+/* FOOTER END */

@@ -142,6 +142,9 @@ img{
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1.5rem;
     }
+    .secondary-heading{
+        font-size: 4rem;
+    }
 }
 /* CATEGORIES END */
 

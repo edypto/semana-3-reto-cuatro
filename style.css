@@ -198,7 +198,7 @@ p{
 }
 
 .nosotros-heading{
-    font-size: 3.2rem;
+   font-size: 3.2rem;
     color: white;
     margin-bottom: 2rem;
 }
@@ -224,6 +224,9 @@ p{
 
     .text-container{
         grid-column: 2/3;
+    }
+    .nosotros-heading{
+        font-size: 4rem;
     }
 }
 

@@ -258,7 +258,7 @@ p{
 }
 
 .producto-text h3{
-    font-size: 2rem;
+    font-size: 2.4rem;
 
    
 }
@@ -294,6 +294,9 @@ p{
       
    }
 
+   .producto h3{
+    font-size: 3rem;
+   }
     
    .producto:nth-child(1){
     grid-column: 1/7;
